@@ -1,0 +1,17 @@
+<h2>Exchange Data Angular</h2>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" [ngStyle]="{'width': progress+'%'}">
+    {{progress}}%
+  </div>
+</div>
+<ul class="list-group" >
+  <li id="list"
+    class="list-group-item d-flex justify-content-between align-items-center"
+    *ngFor="let item of results">
+    {{item.symbol}}
+    <span class="badge badge-danger badge-pill">
+      {{item.price}}
+    </span>
+  </li>
+</ul>
+
